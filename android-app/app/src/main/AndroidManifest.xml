@@ -17,6 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".VisitActionsActivity" />
+        <activity android:name=".MileageActivity" />
+        <activity android:name=".PhysicalAssessmentActivity" />
+        <activity android:name=".NewOrderActivity" />
+        <activity android:name=".DemographicsActivity" />
     </application>
 
 </manifest>

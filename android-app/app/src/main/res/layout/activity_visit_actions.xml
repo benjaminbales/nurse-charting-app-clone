@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#333333"
-    tools:context=".MainActivity">
+    android:background="#333333">
 
     <!-- Header -->
     <LinearLayout
@@ -15,23 +13,32 @@
         android:padding="12dp"
         android:orientation="horizontal"
         android:gravity="center_vertical">
+        
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="&lt;"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#000000"/>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingStart="8dp">
             <TextView
+                android:id="@+id/tvHeaderTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PointCare Manager"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textSize="16sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last synced: 02/27 12:23"
+                android:text="Visit Actions"
                 android:textColor="#000000"
                 android:textSize="12sp"/>
         </LinearLayout>
@@ -40,17 +47,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
-            android:id="@+id/container"
+            android:id="@+id/actionsContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!-- Days will be added dynamically or statically here -->
-            
-        </LinearLayout>
+            android:orientation="vertical"/>
     </ScrollView>
 
 </LinearLayout>
-
