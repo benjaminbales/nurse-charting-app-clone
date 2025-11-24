@@ -1,0 +1,13 @@
+# React
+node_modules/
+dist/
+.env
+.DS_Store
+
+# Android
+.gradle/
+local.properties
+.idea/
+build/
+app/build/
+*.iml
